@@ -1,13 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" id="Layer_1" version="1.2" baseProfile="tiny-ps">
-        <title>Agency Network Logo</title>
-        <rect width="500" height="500" fill="#111111"/>
-        <!-- Large red A: left leg, right leg, crossbar -->
-        <polygon points="15,420 115,60 155,60 255,420 210,420 185,340 85,340 60,420" fill="#cc0000"/>
-        <polygon points="100,290 170,290 135,170" fill="#111111"/>
-        <!-- Large red N: overlapping the A -->
-        <polygon points="200,420 200,60 245,60 350,310 350,60 395,60 395,420 350,420 245,170 245,420" fill="#cc0000"/>
-        <!-- White AGENCY NETWORK text cutting through the middle of the letters -->
-        <rect x="0" y="218" width="500" height="64" fill="#111111" opacity="0.0"/>
-        <text x="250" y="262" font-family="Arial Black,Arial,sans-serif" font-size="44" font-weight="900" fill="white" text-anchor="middle" letter-spacing="3">AGENCY NETWORK</text>
+          <title>Agency Network Logo</title>
+          <defs>
+                      <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+                                    <stop offset="0%" stop-color="#2a2a2a"/>
+                                    <stop offset="100%" stop-color="#050505"/>
+                      </radialGradient>
+          </defs>
+          <rect width="500" height="500" fill="url(#bg)"/>
+          <!-- Letter A: elegant thin serif, apex at top, two thin legs, crossbar -->
+          <!-- Left outer leg -->
+          <polygon points="112,390 148,390 215,130 198,130" fill="#cc0000"/>
+          <!-- Right outer leg -->
+          <polygon points="215,130 232,130 298,390 262,390" fill="#cc0000"/>
+          <!-- Crossbar cutout makes inner hollow -->
+          <polygon points="148,390 148,370 268,370 268,390" fill="#cc0000" opacity="0"/>
+          <!-- Solid A shape with hollow center -->
+          <path d="M108,395 L205,118 L220,118 L312,395 L285,395 L260,318 L162,318 L137,395 Z" fill="#cc0000"/>
+          <polygon points="175,295 247,295 211,182" fill="#2a2a2a"/>
+          <!-- Crossbar -->
+          <rect x="163" y="255" width="84" height="18" fill="#cc0000"/>
+          <!-- Letter N: taller, thin strokes, overlapping A on the right -->
+          <!-- Left vertical stroke -->
+          <rect x="248" y="80" width="28" height="350" fill="#cc0000"/>
+          <!-- Right vertical stroke -->
+          <rect x="378" y="80" width="28" height="350" fill="#cc0000"/>
+          <!-- Diagonal stroke from top-left to bottom-right -->
+          <polygon points="248,80 276,80 406,390 378,390" fill="#cc0000"/>
+          <!-- White AGENCY NETWORK - wide spaced, centered vertically through the letters -->
+          <text x="250" y="262" font-family="Trebuchet MS,Arial,sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="5">AGENCY NETWORK</text>
 </svg>
