@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500" id="Layer_1" version="1.2" baseProfile="tiny-ps">
-            <title>Agency Network Logo</title>
-            <defs>
-                          <style>
-                                          @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;display=swap');
-                          </style>
-                          <radialGradient id="bg" cx="50%" cy="50%" r="70%">
-                                          <stop offset="0%" stop-color="#2d2d2d"/>
-                                          <stop offset="100%" stop-color="#080808"/>
-                          </radialGradient>
-            </defs>
-            <rect width="500" height="500" fill="url(#bg)"/>
-            <!-- Giant red A - Playfair Display Bold, positioned left-center -->
-            <text x="60" y="380" font-family="'Playfair Display', Georgia, serif" font-size="320" font-weight="700" fill="#cc0000">A</text>
-            <!-- Giant red N - taller, shifted right to overlap A -->
-            <text x="220" y="400" font-family="'Playfair Display', Georgia, serif" font-size="340" font-weight="700" fill="#cc0000">N</text>
-            <!-- White AGENCY NETWORK - bold, wide-spaced, cutting through middle of letters -->
-            <text x="250" y="255" font-family="'Playfair Display', Georgia, serif" font-size="40" font-weight="700" fill="white" text-anchor="middle" letter-spacing="6">AGENCY NETWORK</text>
+              <title>Agency Network Logo</title>
+              <defs>
+                              <style>
+                                                @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;display=swap');
+                              </style>
+                              <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+                                                <stop offset="0%" stop-color="#2d2d2d"/>
+                                                <stop offset="100%" stop-color="#080808"/>
+                              </radialGradient>
+                              <clipPath id="clip">
+                                                <rect width="500" height="500"/>
+                              </clipPath>
+              </defs>
+              <rect width="500" height="500" fill="url(#bg)"/>
+              <g clip-path="url(#clip)">
+                              <text x="20" y="410" font-family="'Playfair Display', Georgia, serif" font-size="290" font-weight="700" fill="#cc0000">A</text>
+                              <text x="190" y="435" font-family="'Playfair Display', Georgia, serif" font-size="315" font-weight="700" fill="#cc0000">N</text>
+                              <text x="250" y="275" font-family="'Playfair Display', Georgia, serif" font-size="40" font-weight="700" fill="white" text-anchor="middle" letter-spacing="7">AGENCY NETWORK</text>
+              </g>
 </svg>
